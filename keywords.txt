@@ -1,0 +1,33 @@
+#######################################
+# Syntax Coloring Map For stepperunipolar
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+
+stepperunipolar    KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+steps       KEYWORD2
+addCallBack KEYWORD2
+check       KEYWORD2
+busy        KEYWORD2
+speed       KEYWORD2
+off         KEYWORD2
+stop        KEYWORD2
+stepPerTurn KEYWORD2
+eco         KEYWORD2
+ecodone     KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
