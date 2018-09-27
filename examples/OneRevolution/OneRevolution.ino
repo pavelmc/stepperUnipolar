@@ -3,6 +3,8 @@
  *
  * A custom unipolar motro lib with some unique features, see README.md
  *
+ * Author: Pavel Milanes <pavelmc@gmail.com> CO7WT
+ *
 **/
 
 /*
@@ -12,12 +14,11 @@
 
 #include "stepperunipolar.h"
 
-// motor pins connected to P06N03 Mosfets gates pulling down motor coils
-// if 5V use 1kohms, if 470 use ~220 ohms
+// Motor pins connected to P06N03 Mosfets gates pulling down motor coils
+// if 5V use 1kohms, if 3.3V use ~220 ohms
 //
-// only parameter is mode, you can use the pre-defined values
-// UNIPOLAR_WAVE
-// UNIPOLAR_HALF
+// Parameter is 4 pins and mode, you can use the pre-defined mode values
+// UNIPOLAR_WAVE, UNIPOLAR_HALF
 stepperunipolar stepper(4, 5, 6, 7, UNIPOLAR_WAVE);
 
 // how many steps per 1 turn ?

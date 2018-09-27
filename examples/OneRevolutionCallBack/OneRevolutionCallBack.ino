@@ -3,10 +3,14 @@
  *
  * A custom unipolar motro lib with some unique features, see README.md
  *
+ * Author: Pavel Milanes <pavelmc@gmail.com> CO7WT
+ *
 **/
 
 /*
  * One revolution with a callback
+ *
+ * No motor connected directly to the arduino
  *
 **/
 
@@ -15,11 +19,12 @@
 // In this case we capture the callback and print it on Serial
 // you can pass the value via any means to other device
 // where the motor is connected for example a shift register or
-// via i2c to a i/o expander or even via wireless with a nrf24L01
+// via i2c to a i/o expansor or even via wireless with a nrf24L01
+// to another arduino 200m away.
 //
-// only parameter is mode, you can use the pre-defined values
-// UNIPOLAR_WAVE
-// UNIPOLAR_HALF
+// In this case the only parameter is mode the mode
+// you can use the pre-defined mode values
+// UNIPOLAR_WAVE or UNIPOLAR_HALF
 stepperunipolar stepper(UNIPOLAR_WAVE);
 
 // how many steps per 1 turn ?
