@@ -1,12 +1,12 @@
-#stepperUnipolar#
+# stepperUnipolar #
 
 A non-blocking stepper Library to control unipolar Motors with mosFET as switching devices, also it can use a callback to return the pin values to pass it to a shift register, and has a eco mode.
 
-#Motivation#
+# Motivation #
 
 I was building a small car and need a small and effective library to control the unipolar stepper motor, also on the development I need to move the output of the lib to a shift register (74HC595) to command the motor from there and some other features.
 
-#Features#
+# Features #
 
 * The lib takes care of the pins mode, no need to initiate itas outputs, etc.
 * Is has a eco mode, in my case the motor draw 1.2A once powered and I'm running on batteries, so if your application has a way to stay in place once moved or you don't care of it (like mine) you can activate the eco mode and the motor will draw current _only_ when in motion.
@@ -16,6 +16,6 @@ I was building a small car and need a small and effective library to control the
 
 See the examples for more.
 
-#Author#
+# Author #
 
 Pavel Milanes, amateur radio operator CO7WT, SysAdmin and DIY fan. You can reach me via my email pavelmc@gmail.com
